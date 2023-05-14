@@ -12,9 +12,9 @@ import random
 import collections
 import tensorflow_hub as hub
 import tensorflow.compat.v1 as tf
-from tensorflow.contrib import tpu as contrib_tpu
-from tensorflow.contrib import data as contrib_data
-from tensorflow.contrib import metrics as contrib_metrics
+from tensorflow import tpu as contrib_tpu
+from tensorflow import data as contrib_data
+from tensorflow import metrics as contrib_metrics
 import modeling
 import optimization
 import tokenization
