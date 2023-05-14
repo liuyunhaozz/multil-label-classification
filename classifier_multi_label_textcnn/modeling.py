@@ -17,7 +17,8 @@ import numpy as np
 import six
 from six.moves import range
 import tensorflow as tf
-from tensorflow.contrib import layers as contrib_layers
+
+from tensorflow.keras import layers as contrib_layers
 
 
 class AlbertConfig(object):
