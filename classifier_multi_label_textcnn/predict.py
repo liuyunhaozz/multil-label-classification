@@ -11,7 +11,9 @@ import sys
 pwd = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from networks import NetworkAlbertTextCNN
 from classifier_utils import get_feature_test,id2label
 from hyperparameters import Hyperparamters as hp
