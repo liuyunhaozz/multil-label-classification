@@ -10,7 +10,9 @@ Created on Thu May 30 21:42:07 2019
 import os
 #os.environ["CUDA_VISIBLE_DEVICES"] = '-1'
 import numpy as np
-import tensorflow as tf
+# import tensorflow as tf 
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from networks import NetworkAlbertTextCNN
 from classifier_utils import get_features
 from hyperparameters import Hyperparamters as hp
