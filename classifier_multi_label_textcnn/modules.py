@@ -44,7 +44,7 @@ def cell_textcnn(inputs,is_training):
     h_pool = tf.concat(pooled_outputs, 3)
     h_pool_flat = tf.reshape(h_pool, [-1, num_filters_total])
     # Dropout
-    h_pool_flat_dropout = tf.nn.dropout(h_pool_flat, keep_prob=hp.keep_prob if is_training else 1)
+    h_pool_flat_dropout = tf.nn.dropout(h_pool_flat, rate=1-hp.keep_prob if is_training else 0)
     return h_pool_flat_dropout
             
 
