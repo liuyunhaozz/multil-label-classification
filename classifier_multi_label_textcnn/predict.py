@@ -59,8 +59,8 @@ def get_label(sentence):
 
 if __name__ == '__main__':
     # Test
-    sentences = ['耗电不是特别严重',
-                 '取暖效果：取暖效果好']
+    sentences = ['被同学勒索要钱',
+                 '18中学对面幼儿园门前交通复杂']
     for sentence in sentences:
          print(sentence,get_label(sentence))
     
