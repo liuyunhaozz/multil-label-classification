@@ -9,7 +9,7 @@ import re
 import six
 from six.moves import zip
 import tensorflow.compat.v1 as tf
-from tensorflow.contrib import tpu as contrib_tpu
+from tensorflow.keras import tpu as contrib_tpu
 import lamb_optimizer
 
 
