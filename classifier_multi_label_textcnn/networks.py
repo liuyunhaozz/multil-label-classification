@@ -7,7 +7,9 @@ Created on Thu May 30 20:44:42 2019
 
 
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+# import tensorflow as tf
 import modeling
 import optimization
 from modules import cell_textcnn
