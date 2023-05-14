@@ -7,7 +7,7 @@ Created on Thu May 30 21:01:45 2019
 
 
 import tensorflow as tf
-from tensorflow.contrib.rnn import DropoutWrapper
+# from tensorflow.contrib.rnn import DropoutWrapper
 from hyperparameters import Hyperparamters as hp
 
 
