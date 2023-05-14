@@ -19,8 +19,7 @@ from six.moves import range
 # import tensorflow as tf
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
-from tensorflow.keras import layers as contrib_layers
-
+from tensorflow.compat.v1 import layers as contrib_layers
 
 class AlbertConfig(object):
   """Configuration for `AlbertModel`.
