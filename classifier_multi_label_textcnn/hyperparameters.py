@@ -10,7 +10,7 @@ import os
 import sys
 pwd = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(pwd)
-from classifier_multi_label_textcnn.utils import load_vocabulary
+from utils import load_vocabulary
 
 
 class Hyperparamters:
