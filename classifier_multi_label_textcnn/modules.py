@@ -21,7 +21,7 @@ def cell_textcnn(inputs,is_training):
             with tf.name_scope("conv-maxpool-%s" % filter_size):
                 # Convolution Layer
                 filter_shape = [filter_size, hp.embedding_size, 1, hp.num_filters]
-                W = tf.Variable(tf.truncated_normal(filter_shape, stddev=0.1),dtype=tf.float32, name="W")
+                W = tf.Variable(tf.random.truncated_normal(filter_shape, stddev=0.1),dtype=tf.float32, name="W")
                 b = tf.Variable(tf.constant(0.1, shape=[hp.num_filters]),dtype=tf.float32, name="b")
                 conv = tf.nn.conv2d(
                                     inputs_expand,
