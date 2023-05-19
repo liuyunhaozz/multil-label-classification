@@ -90,8 +90,8 @@ class NetworkAlbertTextCNN(object):
             if self.is_training:
                 # Global_step
                 self.global_step = tf.Variable(0, name='global_step', trainable=False)                  
-                # per_example_loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.label_ids,logits=logits)
-                per_example_loss = tfa.losses.sigmoid_focal_crossentropy(y_true=self.label_ids, y_pred=logits, alpha=0.25, gamma=2.0, from_logits=True) 
+                per_example_loss = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.label_ids,logits=logits)
+                # per_example_loss = tfa.losses.sigmoid_focal_crossentropy(y_true=self.label_ids, y_pred=logits, alpha=0.25, gamma=2.0, from_logits=True) 
                 self.loss = tf.reduce_mean(per_example_loss)              
                 # Optimizer BERT
                 train_examples = processor.get_train_examples(hp.data_dir)
