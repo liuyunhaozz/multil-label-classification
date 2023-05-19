@@ -17,6 +17,7 @@ tf.disable_v2_behavior()
 from networks import NetworkAlbertTextCNN
 from classifier_utils import get_feature_test,id2label
 from hyperparameters import Hyperparamters as hp
+from preprocess import read_csv_file
  
           
 class ModelAlbertTextCNN(object,):
@@ -59,10 +60,19 @@ def get_label(sentence):
 
 if __name__ == '__main__':
     # Test
-    sentences = ['被同学勒索要钱',
-                 '18中学对面幼儿园门前交通复杂']
-    for sentence in sentences:
-         print(sentence,get_label(sentence))
+    data_folder = 'data'
+    test_data = 'test_onehot.csv'
+    test_csv = read_csv_file(data_folder, test_data)
+    sentences = test_csv['content'].tolist()
+    labels = []
+    for index, row in test_csv.iterrows():
+        label = []
+        for key, value in row.items():
+            if value == 1.0:
+                label.append(key)
+        labels.append(label)
+    for i, sentence in enumerate(sentences):
+        print('案件描述:', sentence, '预测值:', get_label(sentence), '真值:', ','.join(labels[i]))
     
 
 
