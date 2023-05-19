@@ -72,7 +72,9 @@ if __name__ == '__main__':
                 label.append(key)
         labels.append(label)
     for i, sentence in enumerate(sentences):
-        print('案件描述:', sentence, '预测值:', get_label(sentence), '真值:', ','.join(labels[i]))
+        print('-' * 10, '案件描述:', sentence, '-' * 10) 
+        print('-' * 10, '预测值:', ','.join(get_label(sentence)), '-' * 10)
+        print('-' * 10, '真值:', ','.join(labels[i]), '-' * 10)
     
 
 
