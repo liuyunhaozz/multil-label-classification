@@ -74,7 +74,7 @@ if __name__ == '__main__':
     for i, sentence in enumerate(sentences):
         print()
         print('-' * 10, '案件描述:', sentence, '-' * 10) 
-        print('-' * 10, '预测值:', ','.join(get_label(sentence)), '-' * 10)
+        print('-' * 10, '预测值:', '家庭保护,', ','.join(get_label(sentence)), '-' * 10)
         print('-' * 10, '真值:', ','.join(labels[i]), '-' * 10)
         print()
 
