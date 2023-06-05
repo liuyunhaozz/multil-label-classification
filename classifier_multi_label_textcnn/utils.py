@@ -1,8 +1,19 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri May 25 23:43:39 2018
+这段代码是一个工具函数集合，提供了一些常用的数据处理和文件操作功能。它包括以下函数：
 
-@author: cm
+cut_list(data, size)：将一个列表按指定大小切分为多个子列表。
+time_now_string()：获取当前时间的字符串表示。
+select(data, ids)：根据给定的索引列表，从原始数据中选取对应的数据。
+load_txt(file)：从文本文件中加载数据，返回一个包含所有行的列表。
+save_txt(file, lines)：将数据保存到文本文件中。
+load_csv(file, header=None)：从CSV文件中加载数据，返回一个DataFrame对象。
+save_csv(dataframe, file, header=True, index=None, encoding="gbk")：将DataFrame对象保存为CSV文件。
+save_excel(dataframe, file, header=True, sheetname='Sheet1')：将DataFrame对象保存为Excel文件。
+load_excel(file, header=0)：从Excel文件中加载数据，返回一个DataFrame对象。
+load_vocabulary(file_vocabulary_label)：从文件中加载词汇表，并将其转换为字典形式的ID到标签和标签到ID的映射。
+shuffle_two(a1, a2)：随机打乱两个列表的顺序，并保持对应关系。
+
 """
 
 

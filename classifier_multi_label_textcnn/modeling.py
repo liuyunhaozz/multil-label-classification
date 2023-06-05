@@ -1,8 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Jul  8 20:03:12 2020
+这是一个使用TensorFlow实现的ALBERT模型。ALBERT是一种基于Transformer的预训练语言模型，用于生成词嵌入和进行文本编码。这段代码包含了ALBERT模型的配置类AlbertConfig和模型类AlbertModel，以及一些辅助函数。
 
-@author: cm
+AlbertConfig用于配置ALBERT模型的各种参数，如词汇表大小、隐藏层大小、注意力头数等。
+
+AlbertModel是ALBERT模型的主要实现类。它接收一个AlbertConfig实例作为参数，并根据配置构建ALBERT模型。它包括嵌入层、编码器层和池化层等组件。可以使用get_pooled_output()方法获取模型的池化输出，get_sequence_output()方法获取编码器的最终隐藏层，以及其他一些获取模型组件的方法。
+
+此外，代码还包含了一些辅助函数，如激活函数gelu()、获取激活函数的函数get_activation()、dropout函数dropout()、层归一化函数layer_norm()等。
 """
 
 from __future__ import absolute_import

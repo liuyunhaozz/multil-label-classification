@@ -1,8 +1,8 @@
 # coding=utf-8
 """
-Created on Wed Aug 10 19:35:56 2021
+这段代码实现了一个包含权重衰减的Adam优化器，用于训练模型。它使用了TensorFlow的tf.train.Optimizer作为基类，并添加了权重衰减的功能。
 
-@author: cm
+
 """
 
 import re

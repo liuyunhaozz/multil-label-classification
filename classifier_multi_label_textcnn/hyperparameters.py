@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 12 14:23:12 2018
-
-@author: cm
+包含了一些超参数和配置信息。
 """
 
 

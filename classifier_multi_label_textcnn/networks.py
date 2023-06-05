@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 30 20:44:42 2019
+这段代码是一个使用ALBERT模型和TextCNN结构的文本分类网络的实现。它使用了TensorFlow框架，并结合了ALBERT模型和TextCNN模型的特点。
 
-@author: cm
+代码中定义了一个名为NetworkAlbertTextCNN的类，它接收一个布尔类型的参数is_training，用于指示当前是否处于训练模式。类的初始化方法中首先定义了输入数据的占位符，包括input_ids、input_masks、segment_ids和label_ids。然后通过调用modeling.AlbertModel类构造了ALBERT模型，并传入相应的参数。接着，将ALBERT模型的输出作为输入，调用cell_textcnn函数构建了TextCNN模型，得到TextCNN的输出output_layer。最后，将TextCNN的输出通过全连接层得到预测结果，并计算损失函数和优化器。
 """
 
 

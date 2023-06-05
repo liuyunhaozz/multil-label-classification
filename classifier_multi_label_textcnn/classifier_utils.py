@@ -1,8 +1,7 @@
 # coding=utf-8
 """
-Created on Thu Jul  9 19:25:30 2020
-
-@author: cm
+这个Python文件实现了一个文本分类模型，包括数据处理、特征转换、模型构建和训练等功能。
+它包含了一些辅助函数和类，用于处理数据集、转换示例为特征，并构建基于ALBERT模型的分类器。文件中还定义了一些辅助函数来处理输入数据和构建模型。总体而言，这个文件提供了一个完整的文本分类模型的实现框架。
 """
 
 
@@ -78,8 +77,7 @@ class InputFeatures(object):
 
   def __init__(self,
                input_ids,
-               input_mask,
-               segment_ids,
+               input_mask,               segment_ids,
                label_id,
                guid=None,
                example_id=None,

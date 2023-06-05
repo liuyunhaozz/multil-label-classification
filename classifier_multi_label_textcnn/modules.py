@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 30 21:01:45 2019
-
-@author: cm
+这是一个使用TensorFlow实现的TextCNN模型的代码片段。TextCNN是一种用于文本分类的卷积神经网络模型，它利用多个不同大小的卷积核对输入文本进行卷积操作，然后通过最大池化提取特征。
 """
 
 

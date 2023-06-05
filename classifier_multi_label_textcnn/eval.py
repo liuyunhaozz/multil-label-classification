@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Apr  9 10:56:43 2020
-
-@author: cm
+这个脚本用于加载数据。
 """
 
 

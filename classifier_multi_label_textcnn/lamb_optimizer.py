@@ -1,5 +1,16 @@
 # coding=utf-8
+"""
+这个文件是一个用于优化（权重更新）的函数和类的集合。
 
+文件中的内容包括：
+
+导入必要的模块和函数，如tensorflow和re。
+定义了一个名为LAMBOptimizer的类，用于实现LAMB（Layer-wise Adaptive Moments optimizer for Batch training）优化器。
+优化器中包含了LAMB算法的核心步骤，包括参数更新、梯度计算和权重衰减等。
+优化器可以应用于梯度和变量的组合，并进行权重衰减和自适应学习率的调整。
+
+
+"""
 """Functions and classes related to optimization (weight updates)."""
 
 from __future__ import absolute_import

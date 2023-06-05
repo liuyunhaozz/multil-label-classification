@@ -1,5 +1,16 @@
 # coding=utf-8
 
+"""
+
+这段代码是关于Tokenization的类定义和相关函数。Tokenization是将文本拆分成单个的“token”的过程，这些token可以是单词、字符或其他更小的单位。这段代码提供了一些常用的tokenization方法和函数。
+
+代码中定义了以下几个类：
+
+FullTokenizer：该类实现了对文本进行完整的tokenization，支持使用字典或SentencePiece模型进行tokenization。
+BasicTokenizer：基本的tokenization类，用于将文本分割成基本的单词和标点符号。
+WordpieceTokenizer：基于WordPiece算法的tokenization类，用于将单词进一步拆分成更小的词片段。
+
+"""
 """Tokenization classes."""
 
 from __future__ import absolute_import
